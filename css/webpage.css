@@ -1,0 +1,269 @@
+/***********************************************************
+************************************************************
+Author: Isvett Verde
+Author website: wwww.isvettverde.com
+License or copyright: Add copyright info if you want to
+Version: Draft
+************************************************************
+***********************************************************/
+
+/***********************************
+COLORS
+
+Palette
+#000000  - black 
+#ffffff  - white
+#696969  - grey
+#f2ddde  - rose quartz
+
+Colors applied
+#000000  - black - Navigation and footer
+#696969  - grey - Header - Active Links - Footer Links on Hover - Blockquote Border
+#ffffff  - white - Body Background - Header H1, H2, H3 - Nav and Footer Links  
+#000000  - black - Body Text
+***********************************/
+
+/***********************************
+LINKS
+
+Nav and header
+a (standard): #ffffff - white (text decoration none)
+a (active):   #ffffff - white
+a (hover):    #f2ddde - white (text decoration: underline)
+a (visited):  #ffffff - white
+
+Body text
+a (standard): #f2ddde - rose quartz
+a (active):   #f2ddde - rose quartz
+a (hover):    #f2ddde - rose quartz- #000000 - black (text decoration: underline)
+a (visited):  #ffffff - rose quartz
+
+Footer
+a (standard): #ffffff - white (text decoration none)
+a (active):   #ffffff - white
+a (hover):    #f2ddde - rose quartz - #000000 - black (text decoration: underline)
+a (visited):  #ffffff - white
+***********************************/
+
+/******************************************
+FONTS
+
+Sans-serif / serif combination
+font-family: FuturaPT, Helvetica, Arial, sans-serif; 400
+font-family: FuturaPT, Helvetica, Arial, sans-serif; 700, 400
+ font-family: 'Monsterrat', serif;
+
+
+********************************************/
+
+/******************************************************
+TABLE OF CONTENTS
+1. Global styles (things that apply to all elements of site: general display, general margin, general font)
+2. Header & Nav styles (specific to header and nav)
+3. Main body Content (headings, images and figures, blockquotes)
+4. Twitter embed codes
+5. Footer Content
+6. Media Queries
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+******************************************************/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family:'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px; 
+  text-align: left;
+  color: #000000;
+  font-style: normal;
+  font-weight: 300; 
+}
+
+/******************************************************
+*******************************************************
+2. Header & Nav styles (specific to header and nav)
+*******************************************************
+******************************************************/
+
+/* Header */
+header {background-color: #ffffff; /*white*/
+  background-size: cover; 
+  color: #5e5e5e;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  max-width: 100%
+}
+/*header h1 story title*/
+
+.display {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 20px 20px 10px 20px;/
+}
+
+/*header h2 lead*/
+.summary {
+  font-family: 'Monsterrat', serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0px 60px;
+  max-width: 100%
+}
+
+/*header h3 byline*/
+.author {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.author a {
+  color: #ffffff;/*white*/
+  text-decoration: none;
+}
+
+.author a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+nav {
+  text-align: right;
+  display: block; left: 639px; top: 151px;
+  border-bottom: 4px solid #f2ddde;
+  }
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+nav ul li a {
+  color: #5e5e5e;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+     border-top: 1px solid #f2ddde;
+   border-bottom: 1px solid #f2ddde;
+}
+
+nav ul li a:hover {text-decoration: underline;}
+
+/******************************************************
+*******************************************************
+3. Main body content 
+*******************************************************
+******************************************************/
+
+article {
+  max-width: 750px;
+  padding: 10px;
+  margin: auto;
+}
+
+/* Body headings */
+
+h1, h2, h3 { 
+  font-family: 'Monsterrat', serif;
+  font-weight: 400;  
+  color: #000000;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 78px;
+  letter-spacing: 0em;
+  padding-bottom: 15px;
+}
+
+h2 {font-size: 24px;
+font-weight: 700;
+}
+
+h3 {font-size: 12px;
+border-bottom:1px wavy;
+}
+
+figure {
+  display: block; 
+  margin: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 12px;
+  color: #000000
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.img-wrapper figure {width: 200px
+}
+
+
+blockquote { 
+border-top: 6px solid #f2ddde;
+border-bottom: 2px solid #f2ddde;
+color: #000000;
+font-family: Roboto, sans-serif;
+font-size: 20px;
+margin: 30px;
+padding: 30px;
+text-align: center; }
+
+/******************************************************
+*******************************************************
+5. Footer content 
+*******************************************************
+******************************************************/
+
+footer {
+  border-top: 4px solid #f2ddde;
+  text-align: center;
+  color:#f2ddde;/*white*/
+  padding: 10px 10px;
+}
+footer ul li {
+  display: inline;/*align links in footer vertically*/
+  padding: 5px;
+}
+  footer ul li a {
+  font-size: 18px;
+  color:#f2ddde;
+}
+
